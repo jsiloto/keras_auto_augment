@@ -1,8 +1,9 @@
 import random
-from keras.preprocessing.image import ImageDataGenerator
+import numpy as np
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-from auto_augment import cutout, apply_policy
-from utils import *
+from .auto_augment import cutout, apply_policy
+from .utils import *
 
 
 class Cifar10ImageDataGenerator:
@@ -78,7 +79,7 @@ class Cifar10ImageDataGenerator:
 def main():
     import argparse
     import matplotlib.pyplot as plt
-    from keras.datasets import cifar10
+    from tensorflow.keras.datasets import cifar10
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--cutout', default=True, type=str2bool)

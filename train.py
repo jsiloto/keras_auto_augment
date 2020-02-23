@@ -6,14 +6,14 @@ import pandas as pd
 import joblib
 from collections import OrderedDict
 
-import keras
-from keras.optimizers import SGD
-from keras.callbacks import ModelCheckpoint, LearningRateScheduler, CSVLogger
-from keras.preprocessing.image import ImageDataGenerator
-from keras.regularizers import l2
-from keras import backend as K
-from keras.models import Model
-from keras.datasets import cifar10
+import tensorflow.keras
+from tensorflow.keras.optimizers import SGD
+from tensorflow.keras.callbacks import ModelCheckpoint, LearningRateScheduler, CSVLogger
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from tensorflow.keras.regularizers import l2
+from tensorflow.keras import backend as K
+from tensorflow.keras.models import Model
+from tensorflow.keras.datasets import cifar10
 
 from utils import *
 from wide_resnet import *

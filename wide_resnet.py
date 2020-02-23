@@ -1,8 +1,8 @@
-import keras
-from keras.models import Model
-from keras.layers import Dense, Conv2D, BatchNormalization, Activation
-from keras.layers import Input, Add, GlobalAveragePooling2D, Dropout
-from keras import regularizers
+import tensorflow.keras
+from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Dense, Conv2D, BatchNormalization, Activation
+from tensorflow.keras.layers import Input, Add, GlobalAveragePooling2D, Dropout
+from tensorflow.keras import regularizers
 
 weight_decay = 5e-4
 
