@@ -1,1 +1,2 @@
 from .dataset import Cifar10ImageDataGenerator
+from .cosine_annealing import CosineAnnealingScheduler

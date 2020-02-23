@@ -74,8 +74,8 @@ def main():
 
     x_test = datagen.standardize(x_test)
 
-    y_train = keras.utils.to_categorical(y_train, 10)
-    y_test = keras.utils.to_categorical(y_test, 10)
+    y_train = tensorflow.keras.utils.to_categorical(y_train, 10)
+    y_test = tensorflow.keras.utils.to_categorical(y_test, 10)
 
     callbacks = [
         ModelCheckpoint('models/%s/model.hdf5'%args.name, verbose=1, save_best_only=True),

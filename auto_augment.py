@@ -225,7 +225,7 @@ def cutout(org_img, magnitude=None):
 
 def main():
     import matplotlib.pyplot as plt
-    from keras.datasets import cifar10
+    from tensorflow.keras.datasets import cifar10
 
     (x_train, y_train), (x_test, y_test) = cifar10.load_data()
 
